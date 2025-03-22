@@ -91,7 +91,6 @@ a {
     padding: 4px;
 }
 
-
 .btn-bottom {
     background-color: var(--color-fadedyellow);
     border: 2px solid var(--color-fadedyellow);
@@ -102,6 +101,7 @@ a {
 }
 
 .btn-card {
+    margin: 25px 15px;
     background-color: var(--color-black);
     border: 2px solid var(--color-black);
     padding: 4px;
@@ -125,23 +125,31 @@ a {
     border: 2px solid var(--color-lightred);
     background-color: transparent;
     color: var(--color-lightred);
+    transition: 0.5s ease;
 }
 
 .btn-outline:hover i {
     color: var(--color-lightred);
+    transition: 0.3s ease;
 }
 
 .btn:hover i {
     color: var(--color-lightred);
+    transition: 0.3s ease;
 }
 
 .btn-bottom:hover i {
     color: var(--color-yellow);
+    transition: 0.3s ease;
 }
 
 .icone-nav {
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     margin: 5px;
+}
+
+.icone-nav:hover {
+    color: var(--color-yellow);
 }
 
 .btn-card:hover {
@@ -153,7 +161,7 @@ a {
 i {
     vertical-align: middle; 
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-light);
 }
 
@@ -204,7 +212,7 @@ i {
 
 .jogo-item {
     width: 370px;
-    height: 500px;
+    height: 320px;
     margin: 3rem 0;
     font-weight: 500;
     text-align: center;
@@ -213,6 +221,7 @@ i {
     align-items:center;
     justify-items: center;
     padding: 2rem;
+    overflow: hidden;
     border-radius:  5px;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     color: var(--color-black);
@@ -220,6 +229,7 @@ i {
 }
 
 .jogo-item:hover {
+    height: 500px;
     transform: scale(1.1);
     transition: 0.7s;
     box-shadow: 0px 0px 50px #fd3636;  
@@ -238,7 +248,8 @@ i {
 }
 
 .jogo-item h3 {
-    margin: 30px 0 1rem;
+    font-size: 25px;
+    margin: 18px 0 1rem;
     width: 90%;
     font-weight: 700;
 }
@@ -248,10 +259,9 @@ i {
     width: 90%;
 }
 
+
 @media (max-width: 600px) {
-    .jogo-item:hover {
-        transform: none;
-    }
+    
     .hero-content h2 {
         font-size: 8vmin;
         text-align: left;
