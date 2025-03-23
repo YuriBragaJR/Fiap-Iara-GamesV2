@@ -17,6 +17,9 @@
     --color-lightred: #f74438;
     --color-red: hsl(4, 100%, 50%);
     --color-black: #000000;
+    --color-yellowcard: #ffd000a8;
+    --color-cardfadein: #ffd257;
+
     --transition: .5s;
 }
 
@@ -185,6 +188,7 @@ i {
 
 .hero-content h2 {
     font-size: 6vmin;
+    color: var(--color-yellow);
 }
 
 .hero-content p {
@@ -215,7 +219,7 @@ i {
     width: 370px;
     height: 330px;
     margin: 3rem 0;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     display: flex;
     flex-direction:column;
@@ -226,7 +230,7 @@ i {
     border-radius:  5px;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     color: var(--color-black);
-    background: var(--color-yellow);
+    background: var(--color-yellowcard);
 }
 
 .jogo-item:hover {
@@ -234,7 +238,7 @@ i {
     transform: scale(1.1);
     transition: 0.7s;
     box-shadow: 0px 0px 50px #fd3636;
-    background: var(--color-lightyellow);
+    background: var(--color-cardfadein);
 }
 
 .jogo-item img {
@@ -387,10 +391,10 @@ i {
 .btn-jogo-anterior,
 .btn-voltar-topo,
 .btn-proximo-jogo {
-    border: 2px solid var(--color-red);
+    border: 2px solid var(--color-yellow);
     padding: 10px;
-    color: var(--color-red);
-    transition: 0.5s ease;
+    color: var(--color-yellow);
+    transition: 0.5s;
 }
 
 .btn-jogo-anterior {
@@ -415,10 +419,11 @@ i {
 .btn-jogo-anterior:hover, 
 .btn-voltar-topo:hover, 
 .btn-proximo-jogo:hover {
-    border: 2px solid var(--color-red);
-    background: var(--color-red);
+    border: 2px solid var(--color-yellow);
+    background: var(--color-yellow);
     color: var(--color-black);
     font-weight: 700;
+    transition: 0.5s;
 }
 
 /* botão jogo anterior,voltar topo e proximo jogo*/
