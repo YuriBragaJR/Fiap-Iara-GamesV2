@@ -12,6 +12,7 @@
     --color-light: #ffffff;
     --color-fadedyellow: #a1941aa2;
     --color-yellow: #ffe600da;
+    --color-lightyellow: #ffbd68;
     --color-fadedred: #ff0000b2;
     --color-lightred: #f74438;
     --color-red: hsl(4, 100%, 50%);
@@ -44,8 +45,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    margin-top: 10px; 
-
+    margin-top: 10px;
 }
 
 
@@ -80,14 +80,14 @@ a {
     background-color: var(--color-fadedred);
     border: 2px solid var(--color-fadedred);
     padding: 4px;
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 10px 10px 10px 2px;
     color: var(--color-light);
     transition: var(--transition);
 }
 
 .btn-outline {
     border: 2px solid var(--color-light);
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 10px 10px 10px 2px;
     padding: 4px;
 }
 
@@ -95,17 +95,17 @@ a {
     background-color: var(--color-fadedyellow);
     border: 2px solid var(--color-fadedyellow);
     padding: 4px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 3px 20px 20px 3px;
     color: var(--color-light);
     transition: var(--transition);
 }
 
 .btn-card {
-    margin: 25px 15px;
+    margin: 5px 15px;
     background-color: var(--color-black);
     border: 2px solid var(--color-black);
     padding: 4px;
-    border-radius: 8px;
+    border-radius: 2px 2px 10px 10px;
     color: var(--color-light);
     transition: var(--transition);
 }
@@ -143,12 +143,12 @@ a {
     transition: 0.3s ease;
 }
 
-.icone-nav {
+.li-nav {
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     margin: 5px;
 }
 
-.icone-nav:hover {
+.li-nav:hover {
     color: var(--color-yellow);
 }
 
@@ -160,8 +160,8 @@ a {
 
 i {
     vertical-align: middle; 
-    margin-left: 10px;
-    font-size: 20px;
+    margin-left: 5px;
+    font-size: 15px;
     color: var(--color-light);
 }
 
@@ -208,6 +208,7 @@ i {
     align-items: center;
     gap: 100px 50px;
     justify-content: space-evenly;
+    
 }
 
 .jogo-item {
@@ -232,14 +233,15 @@ i {
     height: 500px;
     transform: scale(1.1);
     transition: 0.7s;
-    box-shadow: 0px 0px 50px #fd3636;  
+    box-shadow: 0px 0px 50px #fd3636;
+    background: var(--color-lightyellow);
 }
 
 .jogo-item img {
-    width: 90%;
+    width: 97%;
     height: auto;
     border-radius: 5px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.5s ease; 
 } 
 
 .jogo-item:hover img {
@@ -248,10 +250,10 @@ i {
 }
 
 .jogo-item h3 {
-    font-size: 25px;
-    margin: 18px 0 1rem;
+    font-size: 22px;
     width: 90%;
     font-weight: 700;
+    margin: 15px 5px;
 }
 
 .jogo-item p {
@@ -259,9 +261,152 @@ i {
     width: 90%;
 }
 
+/* --------------------------Paginas dos jogos-------------------------------*/
 
+
+#hero2 {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 3.3)), url(../images/1ChronoTeia/img-fundo.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+}
+
+#hero3 {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 3.3)), url(../images/2Horizontes-Perdidos/img-fundo.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+}
+
+#hero4 {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 3.3)), url(../images/3Ecos-do-Abismo/ecoimg\ \(2\).jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+}
+
+#hero5 {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 3.3)), url(../images/5Sonhos-de-neon/fundo-img.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+}
+
+
+.game-page h2 {
+    font-size: 6vmin;
+}
+
+.game-page p, h3, h4 {
+    font-weight: 450;
+    margin-bottom: 1.5rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.2rem;
+}
+.game-page h3 {
+    color: var(--color-lightyellow);
+}
+
+.game-page {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.game-img img {
+    width: 350px;
+    height: 250px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px 10px #000000 ;
+    transition: 0.5s;
+}
+.game-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin: 70px 0 100px 0;
+}
+
+.game-img img:hover {
+    box-shadow: 0px 0px 30px #ffa149;
+    width: 402px;
+    height: 287px;
+    transition: 1.3s ease;
+}
+
+
+/* botão jogo anterior,voltar topo e proximo jogo*/
+
+
+.btn-jogo-anterior,
+.btn-voltar-topo,
+.btn-proximo-jogo {
+    border: 2px solid var(--color-red);
+    padding: 10px;
+    color: var(--color-red);
+    transition: 0.5s ease;
+}
+
+.btn-jogo-anterior {
+    border-radius: 20px 5px 5px 0px ;
+}
+
+.btn-voltar-topo{
+    border-radius: 20px 20px 5px 5px;
+}
+
+.btn-proximo-jogo{
+    border-radius: 5px 20px 0px 5px ;
+}
+
+.btn-down {
+    display: flex;
+    justify-content: center;
+    gap:25% ;
+    margin: 100px 0;
+}
+
+.btn-jogo-anterior:hover, 
+.btn-voltar-topo:hover, 
+.btn-proximo-jogo:hover {
+    border: 2px solid var(--color-red);
+    background: var(--color-red);
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+/* botão jogo anterior,voltar topo e proximo jogo*/
+
+
+
+
+/* --------------------------media queries-------------------------------*/
 @media (max-width: 600px) {
-    
+
     .hero-content h2 {
         font-size: 8vmin;
         text-align: left;
@@ -275,11 +420,5 @@ i {
         border-radius: 20px;
     }
 }
-@media (max-width: 748px) { 
-    .hero {
-        width: 100%; /* Encaixa na largura da tela menor */
-        padding: 10px; /* Adiciona espaçamento interno */
-        margin: ;
-    }
-    
-}
+
+
