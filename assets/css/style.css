@@ -456,6 +456,10 @@ i {
         margin: 70px 15%;
         align-items: center;
     }
+
+    .jogo-lists {
+        padding: 0 200px;
+    }
 }
 
 
