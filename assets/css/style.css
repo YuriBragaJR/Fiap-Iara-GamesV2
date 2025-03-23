@@ -363,7 +363,7 @@ i {
 .game-img img {
     width: 350px;
     height: 250px;
-    border-radius: 5%;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px 10px #000000 ;
     transition: 0.5s;
 }
@@ -377,9 +377,7 @@ i {
 
 .game-img img:hover {
     box-shadow: 0px 0px 30px #ffa149;
-    width: 402px;
-    height: 287px;
-    transition: 1.3s ease;
+    transition: 0.7s;
 }
 
 
