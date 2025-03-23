@@ -210,8 +210,9 @@ i {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 100px 50px;
-    justify-content: space-evenly;
+    gap: 10px 20px;
+    justify-content: space-between;
+    padding: 100px;
     
 }
 
