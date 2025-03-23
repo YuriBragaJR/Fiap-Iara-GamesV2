@@ -311,6 +311,17 @@ i {
     align-items: center;
     color: var(--color-light);
 }
+#hero6 {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 3.3)), url(../images/6Reino-sob-as-Cinzas/fundo-img.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+}
 
 
 .game-page h2 {
