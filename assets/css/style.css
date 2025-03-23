@@ -210,9 +210,8 @@ i {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px 20px;
-    justify-content: space-between;
-    padding: 100px;
+    gap: 100px 50px;
+    justify-content: space-evenly;
     
 }
 
@@ -449,6 +448,13 @@ i {
     }
     .jogo-item {
         border-radius: 20px;
+    }
+}
+
+@media (min-width: 1660px) {
+    .game-img {
+        margin: 70px 15%;
+        align-items: center;
     }
 }
 
