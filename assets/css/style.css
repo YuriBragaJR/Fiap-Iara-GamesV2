@@ -435,6 +435,12 @@ i {
 
 
 /* --------------------------media queries-------------------------------*/
+@media screen and (max-width: 768px) {
+    .menu-nav {
+      display: none; /* Esconde o menu */
+    }
+}
+
 @media (max-width: 600px) {
 
     .hero-content h2 {
